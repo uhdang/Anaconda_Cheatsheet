@@ -6,6 +6,7 @@ $ conda update [package_name]
 $ conda update --all
 $ conda list
 $ conda search *search_term*
+$ conda env list
 
 i.e.
 $ conda install numpy=1.10 scipy pandas
@@ -16,8 +17,10 @@ $ conda search '*beautifulsoup*'
 ## Managing Environments
 ```
 $ conda create -n [env_name] [list of packages]
-$ source activate [env_name]
-$ source deactivate
+$ source activate [env_name]  # Miniconda
+or 
+$ conda activate [env_name]  # Anaconda
+$ source(conda) deactivate
 $ conda list
 $ conda install [package_name]
 
